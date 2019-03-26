@@ -61,7 +61,7 @@ module ``11: Exploring your options and results`` =
     let ``03 Remapping Option values`` () =
       let f n =
          match getSurname n with
-         | _ -> __ // <-- write a bunch of good match cases
+         | _-> __ // <-- write a bunch of good match cases
       f "Anubis" |> should equal "[no surname]"
       f "Niccolo Machiavelli" |> should equal "Machiavelli"
       f "Mara Jade" |> should equal "Jade"

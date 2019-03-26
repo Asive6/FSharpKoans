@@ -25,13 +25,12 @@ module ``05: To iterate is human; to recurse, divine`` =
     let ``02 Tail recursion stops a stack overflow from occurring`` () =
         // CHANGE the recursive function to be tail recursive.
         let myfun n =
-            let start= -1
             let sq = n*n
             let v = sq*sq*sq*sq
             let rec inner count =
                 match count = v with
                 | true -> 0
-                | false -> (start + inner (count+1))
+                | false -> - 1 + inner (count+1)
             inner sq 
 
         myfun 12 |> should equal 0
