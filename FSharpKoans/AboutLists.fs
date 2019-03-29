@@ -106,7 +106,7 @@ module ``12: I Have Here In My Hand A List`` =
             | [a;b;c;d;e] -> "prune"
             | _::t::_::u::_ -> t + u
             | _ -> "fig"
-        k |> should equal "fig"
+        k |> should equal "peachwatermelon"
 
     [<Ignore("No??")>]
     let ``14 Creating a list containing a sequence of numbers, and indexing`` () =
