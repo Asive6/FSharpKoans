@@ -48,7 +48,7 @@ module ``13: String manipulation`` =
 
     [<Test>]
     let ``07 String formatting: %s format specifier`` () =
-        let result = sprintf "%s Practice makes"  "perfect"
+        let result = sprintf "%s" "Practice makes perfect"
         result |> should equal "Practice makes perfect."
 
     [<Test>]
