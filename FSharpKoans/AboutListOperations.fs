@@ -105,9 +105,7 @@ module ``14: List operations are so easy, you could make them yourself!`` =
    (* [<Test>]
     let ``07 Specified-function mapping, the hard way`` () =
         let map (f : 'a -> 'b) (xs : 'a list) : 'b list =
-            match xs.Length>0 with// write a map which applies f to each element
-            |true -> xs |> List.iter f
-            | false -> ()
+            // write a map which applies f to each element  
         map (fun x -> x+1) [9;8;7] |> should equal [10;9;8]
         map ((*) 2) [9;8;7] |> should equal [18;16;14]
         map (fun x -> sprintf "%.2f wut?" x)  [9.3; 1.22] |> should equal ["9.30 wut?"; "1.22 wut?"]
